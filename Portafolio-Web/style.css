@@ -1,0 +1,145 @@
+/* ========================================= */
+/* 1. CONFIGURACIÓN GENERAL Y TIPOGRAFÍA */
+/* ========================================= */
+
+:root {
+    /* Paleta de Colores */
+    --color-principal: #007bff;      /* Azul brillante (Tecnológico) */
+    --color-secundario: #6c757d;    /* Gris suave */
+    --color-fondo: #f8f9fa;         /* Blanco roto/Gris claro para fondo */
+    --color-texto: #343a40;         /* Gris oscuro para texto */
+    --color-claro: #ffffff;         /* Blanco puro */
+}
+
+body {
+    /* Define una fuente limpia y moderna (usa 'sans-serif' como respaldo) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    /* El padding lateral evita que el contenido toque los bordes en pantallas pequeñas */
+    padding: 0 15px;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    color: var(--color-principal);
+    margin-top: 1.5em;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--color-principal);
+}
+
+/* ========================================= */
+/* 2. ESTRUCTURA Y LAYOUT (RESPONSIVO) */
+/* ========================================= */
+
+/* Contenedor principal para centrar el contenido y limitar el ancho máximo */
+main {
+    max-width: 900px; /* Ancho ideal para lectura */
+    margin: 20px auto; /* Centra el contenido horizontalmente */
+    padding: 20px;
+    background-color: var(--color-claro);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para "levantar" la página */
+    border-radius: 8px;
+}
+
+header {
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #dee2e6;
+    color: var(--color-secundario);
+    font-size: 0.9em;
+}
+
+/* Media query para adaptar el diseño a pantallas muy pequeñas (móviles) */
+@media (max-width: 600px) {
+    body {
+        padding: 0 10px; /* Reduce aún más el padding en móviles */
+    }
+    main {
+        padding: 15px; /* Reduce el padding interno en móviles */
+    }
+}
+
+
+/* ========================================= */
+/* 3. NAVEGACIÓN Y ENLACES (ESTILO DE BOTÓN) */
+/* ========================================= */
+
+/* Estilo para los elementos de la lista de navegación */
+nav ul {
+    list-style: none; /* Quita las viñetas por defecto */
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para los enlaces principales (como botones grandes) */
+nav a {
+    display: block; /* Hace que el enlace ocupe todo el ancho del <li> */
+    padding: 12px 15px;
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    text-decoration: none; /* Quita el subrayado */
+    border: 2px solid var(--color-principal);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transición suave para el hover */
+    font-weight: bold;
+}
+
+/* Efecto Hover (al pasar el ratón) */
+nav a:hover {
+    background-color: var(--color-principal);
+    color: var(--color-claro); /* Texto blanco sobre fondo azul */
+    border-color: var(--color-principal);
+}
+
+/* Estilo para el enlace de regreso en el footer */
+footer a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--color-principal);
+}
+
+
+/* ========================================= */
+/* 4. ESTILOS DE CONTENIDO Y MULTIMEDIA */
+/* ========================================= */
+
+/* Estilo para la lista de materiales y procedimientos */
+section ul, section ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Imágenes dentro de las secciones de proyecto */
+img {
+    max-width: 100%; /* Asegura que la imagen nunca exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Centra o maneja la imagen más fácilmente */
+    margin: 20px auto; /* Margen superior/inferior y centrado */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera en las imágenes */
+}
+
+/* Estilo para resaltar texto importante dentro de los procedimientos */
+strong {
+    color: var(--color-principal);
+}
