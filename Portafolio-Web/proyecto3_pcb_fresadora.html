@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto 3: PCB con Fresadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Proyecto 3: Corte en fresadora de una placa PCB de cobre y soldadura</h1>
+        <p>Documentación del proceso de fabricación de una placa de circuito impreso (PCB) simple.</p>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introducción</h2>
+            <p>Este proyecto consistio en el diseño de un circuito, la generación de trayectorias para fresado, el corte de la placa de cobre y, finalmente, la soldadura de los componentes electrónicos.</p>
+        </section>
+
+        <section>
+            <h2>Materiales y Herramientas</h2>
+            <ul>
+                <li>Material: Placa de Cobre FR-4</li>
+                <li>Componentes: LED rojo, 3 resistencias, bornera, capacitor de 47, transistor npn22n2222, LM555, potenciometro </li>
+                <li>Software de Diseño PCB: Easyeda Online Editor</li>
+                <li>Hardware: Fresadora CNC pequeña LPKF</li>
+                <li>Herramientas Auxiliares: Soldador, estaño, extractor de humos.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Procedimiento</h2>
+            <ol>
+                <li>Diseño del Circuito y PCB: Se diseñó el esquemático y se realizó el diagrama de la PCB, asegurando que las pistas tuvieran el ancho adecuado para el fresado.</li>
+                <img src="imagenes/PCB6.jpg" alt="Esquema del circuito" width="500">
+                
+                <li>Generación de archivo Gerber: Usando el software Easyeda, se generaron las trayectorias para el fresado de las pistas y el corte del contorno de la placa.</li>
+                <img src="imagenes/PCB6.jpg" alt="Esquema del PCB" width="500">
+
+                
+                <li>Fresado (Corte): Se calibró la máquina y se cortó la placa de cobre, separando las pistas.</li>
+                <img src="imagenes/PCB4.jpg" alt="Placa PCB siendo cortada" width="500">
+                
+                <li>Perforación y Limpieza: Se perforaron los agujeros y se limpió la placa de los residuos de cobre.</li>
+                <img src="imagenes/PC36.jpg" alt="Placa PCB finalizada" width="500">
+
+                <li>Soldadura: Se soldaron los componentes electrónicos a sus respectivas ubicaciones en la placa.</li>
+                <li>Mencion especial: No salio facil, de hecho, pase mas de 20 horas en el laboratorio previamente menciononado </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Resultados y Conclusiones</h2>
+            <p>El circuito funcionó correctamente al ser energizado despues de 5 intentos fallidos. La calidad de las pistas fue adecuada, permitiendo una soldadura limpia de los componentes.</p>
+            <img src="imagenes/PCB5.jpg" alt="Placa PCB finalizada y soldada" width="500">
+            <h3>Conclusión</h3>
+            <p>El fresado CNC ofrece una manera rápida de prototipar PCBs, aunque requiere una calibración precisa del eje Z y mucho tiempo. Se logró integrar el diseño electrónico con la fabricación mecánica para obtener un circuito funcional.</p>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p><a href="index.html">⬅️ Volver a la Página Principal</a></p>
+    </footer>
+</body>
+</html>
